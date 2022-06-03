@@ -13,21 +13,26 @@ nameInput.addEventListener('input', () => {
     nameHeader.textContent = nameInput.value;
 });
 
-const descriptionTextarea = document.getElementById('description-textarea');
-const descriptionDisplay = document.getElementById('description-display');
-descriptionTextarea.addEventListener('input', () => {
-    descriptionDisplay.textContent = descriptionTextarea.value;
+const greetingTextarea = document.getElementById('greeting-textarea');
+const greetingDisplay = document.getElementById('greeting-display');
+greetingTextarea.addEventListener('input', () => {
+    greetingDisplay.textContent = greetingTextarea.value;
 });
 
 const themeSelect = document.getElementById('theme-select');
 const theme = document.getElementById('theme');
 themeSelect.addEventListener('change', () => {
-    theme.classList.value = "";
-    theme.classList.add(themeSelect.value)
-})
+    theme.classList.value = '';
+    theme.classList.add(themeSelect.value);
+});
 
-
+const image = document.getElementById('image');
 const imageSelect = document.getElementById('image-select');
 imageSelect.addEventListener ('change', () => {
     image.src = imageSelect.value;
-})
+});
+
+const pictureText = document.getElementById('picture-text');
+pictureText.addEventListener('input', () => {
+    pictureText.textContent = pictureText.value;
+});
