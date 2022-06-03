@@ -6,21 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web UI Project</title>
+    <title>Greeting-Card</title>
 </head>
 
 <body>
     <header>
         <img src="assets/html_css_js.png">
-        <h1>Web UI Project</h1>
+        
+
+        <h1>Greetings fellow coders</h1>
+
     </header>
 
-    <main>
+    <section id="theme">
 
-    </main>
+    
+        
 
-    <footer>&copy;2021 Aspiring Software Developer</footer>
+        <section id="Greeting-Card">
+        <div id="container"> 
+        <section id="inputs">
+        <label for="name-input">Name</label>
+        <input id="name-input" value="Tanner">
 
+    
+
+    <label for="greeting-textarea">greeting</label>
+    <textarea id="greeting-textarea">Hello my fellow friends, and greetings from the elements of the world. I wish you a good day, and happy coding!</textarea>
+
+    <label for="image-select">Image</label>
+        <select id="image-select">
+        <option value="assets/mountain.png">mountain</option>
+        <option value="assets/ocean.png" selected>ocean</option>
+        <option value="assets/volcano.png">volcano</option>
+        </select>
+    
+    
+    <label for="theme-select">Theme</label>
+        <select id="theme-select">
+        <option value="Rocky">Rocky</option>
+        <option value="Water">Water</option>
+        <option value="Fire">Fire</option>
+        </select>
+        
+        <section id="image-card">
+        <img id="image" src="assets/mountain.png"/>
+        <p id="picture-text"></p>
+        <p id="picture-name"></p>
+
+        </section>
+ 
+    </section>
+    
+    
+</section>
+
+
+<footer></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
     <script type="module" src="app.js"></script>
 </body>
 
